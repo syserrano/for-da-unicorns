@@ -1,64 +1,48 @@
 import Image from "next/image";
 
+
 export default function resumePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="resume-page flex min-h-screen flex-col items-center justify-between bg-pink dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
+        
+        <header className="header-card rounded-2xl px-10 py-10 mb-8 text-center">
+          <h1 className="text-5xl font-bold tracking-tight name-text mb-1">
+            Sofia Y. Serrano
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-sm uppercase tracking-widest role-text mb-5">
+            Business Analytics &amp; Information Systems
           </p>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 contact-text text-sm">    
+            <a href="mailto:syserrano@usf.edu" className="contact-link">Email</a>
+            <a href="https://www.linkedin.com/in/sofiaserrano-y/" className="contact-link">LinkedIn</a>
+            <a href="https://github.com/syserrano" className="contact-link">GitHub</a>
+          </div>
+        </header>  
+
+        <div className = "flex justify-center -mt-2 mb-8">
+          <Image
+            src="/profile.jpeg"
+            alt="Profile Picture"
+            width={150}
+            height={150}
+            className="border-4 border-gray-300"
+            style={{ border: "4px solid #E8A0A8", objectPosition: "center top" }}
+          />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        <section className="section-card rounded-2xl px-8 py-7 mb-6">
+          <h2 className="section-title text-xs uppercase tracking-widest mb-3">About</h2>
+          <p className="body-text text-sm leading-relaxed">
+            Business Analytics and Information Systems student at USF with a 3.8 GPA, seeking to develop
+            technical expertise as a Systems Analyst or Business Analyst upon graduation. Passionate about
+            expanding and maintaining a strong professional network while building toward leadership roles
+            such as Project Manager or IT Director where I can contribute to strategic decision-making.
+            Long-term, I aspire to mentor and guide the next generation of aspiring analysts in the field.
+          </p>
+        </section>  
+        
+         
       </main>
     </div>
   );
