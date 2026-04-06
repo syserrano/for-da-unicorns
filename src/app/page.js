@@ -112,6 +112,60 @@ export default function resumePage() {
             </ul>
           </div>
         </section>
+
+        <section className="section-card rounded-2xl px-8 py-7 mb-6">
+          <h2 className="section-title text-xs uppercase tracking-widest mb-5">Honors &amp; Awards</h2>
+          <ul className="body-text text-sm space-y-2 list-none">
+            <li className="flex justify-between flex-wrap gap-1">
+              <span className="bullet-item entry-title font-semibold">Hispanic Scholarship Fund Scholar</span>
+              <span className="date-tag text-xs px-3 py-1 rounded-full self-start">Jan 2025</span>
+            </li>
+            <li className="flex justify-between flex-wrap gap-1">
+              <span className="bullet-item">Excel Certification</span>
+              <span className="date-tag text-xs px-3 py-1 rounded-full self-start">Oct 2024</span>
+            </li>
+            <li className="flex justify-between flex-wrap gap-1">
+              <span className="bullet-item">LinkedIn "What is Business Analytics" Certification</span>
+              <span className="date-tag text-xs px-3 py-1 rounded-full self-start">Sep 2024</span>
+            </li>
+            <li className="flex justify-between flex-wrap gap-1">
+              <span className="bullet-item">Bright Futures Scholarship</span>
+              <span className="date-tag text-xs px-3 py-1 rounded-full self-start">Jul 2024</span>
+            </li>
+            <li className="flex justify-between flex-wrap gap-1">
+              <span className="bullet-item entry-title font-semibold">George Snow Scholarship</span>
+              <span className="date-tag text-xs px-3 py-1 rounded-full self-start">Jun 2024</span>
+            </li>
+          </ul>
+        </section>
+
+        <section className="section-card rounded-2xl px-8 py-7 mb-6">
+          <h2 className="section-title text-xs uppercase tracking-widest mb-5">Skills</h2>
+          <div className="flex flex-col gap-3">
+ 
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="skill-label text-xs font-semibold uppercase tracking-wide w-24 shrink-0">Computer</span>
+              {["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Tableau", "Basic Python"].map((s) => (
+                <span key={s} className="skill-tag text-xs px-3 py-1 rounded-full">{s}</span>
+              ))}
+            </div>
+ 
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="skill-label text-xs font-semibold uppercase tracking-wide w-24 shrink-0">Languages</span>
+              {["English (Fluent)", "Spanish (Fluent)"].map((s) => (
+                <span key={s} className="skill-tag text-xs px-3 py-1 rounded-full">{s}</span>
+              ))}
+            </div>
+ 
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="skill-label text-xs font-semibold uppercase tracking-wide w-24 shrink-0">Soft Skills</span>
+              {["Team Collaboration", "Leadership", "Communication"].map((s) => (
+                <span key={s} className="skill-tag text-xs px-3 py-1 rounded-full">{s}</span>
+              ))}
+            </div>
+ 
+          </div>
+        </section>
       </main>
     </div>
   );
