@@ -24,8 +24,8 @@ export default function resumePage() {
           <Image
             src="/profile.jpeg"
             alt="Profile Picture"
-            width={150}
-            height={150}
+            width={250}
+            height={250}
             className="border-4 border-gray-300"
             style={{ border: "4px solid #E8A0A8", objectPosition: "center top" }}
           />
